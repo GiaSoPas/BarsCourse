@@ -6,5 +6,5 @@ What can be seen at the moment:
 
 | Task   | Deadline  | Status  |
 | ------------ | ------------ | ------------ |
-| [Event task]()  |  22.03 18:00 | done  |
+| [Event task](https://github.com/GiaSoPas/BarsCourse/tree/master/Events)  |  22.03 18:00 | done  |
 
