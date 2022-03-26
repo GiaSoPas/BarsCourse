@@ -1,4 +1,4 @@
-# .Net Course February-April 2022
+# .Net Course February-May 2022
 ____
 This repository was created to track my work on the .Net course at [BarsGroup](https://life.bars.group/) 
 
