@@ -2,10 +2,8 @@
 {
     class Program
     {
-
         static void Main(string[] args)
         {
-            
             Console.WriteLine("Application launched");
             Console.WriteLine("Enter the request text to send. Type /exit to exit");
             var command = Console.ReadLine();
@@ -24,12 +22,15 @@
                     arg = Console.ReadLine();
                 }
 
-                new Thread(() => HandleWork(command, argsList.ToArray())).Start();
-                
+                ThreadPool.QueueUserWorkItem(_ =>
+                    HandleWork(command, argsList.ToArray())
+                );
+                //new Thread(() => HandleWork(command, argsList.ToArray())).Start();
+
                 Console.WriteLine("Enter the request text to send. Type /exit to exit");
                 command = Console.ReadLine();
             }
-            
+
             Console.WriteLine("The program has ended");
         }
 
